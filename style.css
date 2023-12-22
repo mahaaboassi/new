@@ -742,9 +742,3 @@ p{
 
     
 }
-@keyframes moveBla {
-    50%{
-        transform: scale(0.7); 
-    }
-    
-}
