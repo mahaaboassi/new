@@ -139,7 +139,7 @@ body{
 }
 .content::after{
     content: "";
-    background-image: url("./images/hat_icon-icons.com_74643.png");
+    /* background-image: url("./images/hat_icon-icons.com_74643.png"); */
     height: 100px;
     width: 100px;
     z-index: 7;
