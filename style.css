@@ -153,7 +153,7 @@ body{
 
 .title{
     font-family: cursive;
-    font-size: 20px;
+    font-size: 30px;
     color:white;
     padding: 40px 30px;
     backdrop-filter: blur(6px);
@@ -740,5 +740,11 @@ p{
     }
     
 
+    
+}
+@keyframes moveBla {
+    50%{
+        transform: scale(0.7);
+    }
     
 }
