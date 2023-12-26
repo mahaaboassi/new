@@ -194,3 +194,17 @@ p{
     }
     
 }
+@media(min-width:768px){
+    #santa{
+        top:70%;
+    animation:move_2 2s infinite;
+    transform: translate(-50%,-70%) rotate(10deg);
+    transition: 0.5s ease-in;
+    }
+    @keyframes move_2 {
+        50%{
+            transform:translate(-50%,-70%) rotate(-10deg);
+        }
+        
+    }
+}
