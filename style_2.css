@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Molle:400italic&subset=latin,latin-ext);
+body{
+background-color: hsla(0,0%,0%,1);
+margin: 0;
+overflow: hidden;
+font-family: 'Molle', cursive;
+}
+/* .container{
+    position: relative;
+    overflow: hidden;
+} */
+
+.title{
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  transform: translate( -50%, -20%);
+  color:white;
+  text-align: center;
+}
+#basic_title{
+    font-size: 40px;
+}
+.title::first-letter{
+    font-size: 40px;
+    
+    /* color:black; */
+   
+}
+p{
+    font-size: 30px;
+    padding-left:10px ;
+}
+#smm{
+    background-color: #749DE8;
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+}
+#year{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#year div:nth-child(1){
+    font-size: 50px;
+    color:rgb(85, 33, 33)!important;
+    text-align: center;
+}
+#year span:nth-child(2){
+    font-size: 50px;
+    color:rgb(20, 11, 145)!important;
+    text-align: center;
+}
+#year div:nth-child(1){
+    font-size: 50px;
+    color:rgb(85, 33, 33)!important;
+    text-align: center;
+    transform: translateX(10px);
+    animation: move1 2s infinite;
+
+}
+#year div:nth-child(2){
+    font-size: 50px;
+    color:rgb(20, 11, 145)!important;
+    text-align: center;
+    transform: translateY(10px);
+    animation: move2 2s infinite;
+}
+#year div:nth-child(3){
+    font-size: 50px;
+    color:rgb(4, 82, 21)!important;
+    text-align: center;
+    animation: move1 2s infinite;
+    
+}
+#year div:nth-child(4){
+    font-size: 50px;
+    color:rgb(214, 10, 116)!important;
+    text-align: center;
+    animation: move2 2s infinite;
+}
+@keyframes move1 {
+    50%{
+        transform: translateX(-10px);
+    }
+}
+@keyframes move2 {
+    50%{
+        transform: translateY(-10px);
+    }
+}
+#santa{
+    width:100px;
+    height: 200px;
+    z-index: 2000;
+    position: absolute;
+    top:90%;
+    left:50%;
+    animation:move 2s infinite;
+    transform: translate(-50%,-90%) rotate(10deg);
+    transition: 0.5s ease-in;
+}
+.santa{
+    width:100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 0 50% 50% 50%;
+    position: absolute;
+    bottom: 0;
+    /* left: 20px; */
+    transform: rotate(225deg);
+  
+
+}
+
+.face{
+    width: 80px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: pink;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+
+}
+.noise{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    top:140px;
+    left:40px
+}
+.eye,.leye{
+    width: 15px;
+    height: 5px;
+    /* background-color: black; */
+    border-top: 5px solid black;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+}
+.eye{
+    left: 25px;
+    top: 130px;
+}
+.leye{
+    left: 60px;
+    top: 130px;
+}
+.mouth{
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top:150px;
+    left: 40px;
+    border-radius: 0 0 50% 50%;
+    border-bottom: 15px solid;
+    border-color: black;
+    opacity: 0.8;
+}
+.hat .bottom{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+}
+.hat .top{
+    width: 70px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    left: 15px;
+    border-radius: 0 110% 0% 0;
+    top: 5px;
+
+}
+.circular{
+    width:20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+@keyframes move {
+    50%{
+        transform:translate(-50%,-90%) rotate(-10deg);
+    }
+    
+}
