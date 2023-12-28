@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy New year</title>
+    <link rel="shortcut icon" href="./logo-demo20.svg" type="image/x-icon">
     <link rel="stylesheet" href="style_2.css">
 </head>
 <body >
@@ -12,13 +13,15 @@
         <canvas id='canv'></canvas>
         <div class="title">
             <div id="basic_title">Book<span id="smm">SMM</span></div>
-            <p>Family BookSMM wish Happy New Year</p>
+            <p >Family BookSMM wish you a Happy New Year</p>
             <div id="year">
-                <div>2</div>
-                <div>0</div>
-                <div>2</div>
-                <div>4</div>
+                <div id="num_1">2</div>
+                <div id="num_2">0</div>
+                <div id="num_3">2</div>
+                <div id="num_4">4</div>
             </div>
+            <div>Our Offers still waiting for you </div>
+            <div><a href="./offers.html">Let's Go</a> &#128525;</div>
             
         </div>
         <div id="santa">
@@ -37,5 +40,38 @@
         
     <!-- </div> -->
     <script src="./script_2.js"></script>
+    <script>
+        var width = c.width = window.innerWidth, 
+    height = c.height = window.innerHeight;
+        if(h <=800 && w <=700){
+                let container = document.querySelector(".title")
+                let title = document.querySelector("#basic_title")
+
+                // let firstLetter = document.querySelector(".title::first-letter")
+                let smm = document.querySelector("#smm")
+                let para = document.querySelector("p")
+                let num_1 = document.getElementById("num_1")
+                let num_2 = document.getElementById("num_2")
+                let num_3 = document.getElementById("num_3")
+                let num_4 = document.getElementById("num_4")
+                title.setAttribute("style","font-size:20px !important")
+                smm.setAttribute("style","font-size:20px !important")
+                para.setAttribute("style","font-size:18px !important")
+                container.setAttribute("style","top:10% !important")
+                // firstLetter.setAttribute("style","font-size:18px !important")
+                num_1.setAttribute("style","font-size:20px !important")
+                num_2.setAttribute("style","font-size:20px !important")
+                num_3.setAttribute("style","font-size:20px !important")
+                num_4.setAttribute("style","font-size:20px !important")
+                }
+                if(height <400 ){
+                   
+                    let santa = document.getElementById("santa")
+                    santa.style.opacity="0"
+                    santa.style.zIndex ="-100"
+                }
+    </script>
+       
+    </script>
 </body>
 </html>
